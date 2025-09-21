@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peluang — Homepage</title>
+  <meta name="description" content="Mencari Peluang." />
+  <link rel="stylesheet" href="./css/peluangHome.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="peluangHome.html">
+        <span class="brand-mark">●</span><span class="brand-text">Peluang</span>
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="peluangAbout.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="peluangPortfolio.html">Portfolio</a></li>
+          <li><a class="btn btn--primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section reveal">
+      <div class="container">
+        <h1 class="display">Connecting Tomorrow's Innovators<br><span class="muted">Mencari Peluang.</span></h1>
+        <p class="lede">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+        <p><a href="#contact" class="btn btn--primary">Contact Us</a></p>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+          Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+          Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+        </p>
+        <a href="peluangAbout.html" class="link-more-block">Read more →</a>
+      </div>
+    </section>
+
+<!-- SERVICES (on homepage) -->
+<section id="services" class="section alt-bg reveal">
+  <div class="container">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li><strong>Lorem ipsum</strong> Placeholder text here.</li>
+      <li><strong>Lorem ipsum</strong> Placeholder text here.</li>
+      <li><strong>Lorem ipsum</strong> Placeholder text here.</li>
+    </ul>
+    <a href="peluangHome.html#services" class="link-more-block">Read more →</a>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO PREVIEW -->
+<section id="portfolio" class="section reveal">
+  <div class="container">
+    <h2>Our Portfolio</h2>
+    <div class="grid grid--3">
+      <article class="card reveal">
+        <img src="assets/placeholder.jpg" alt="Client project 1">
+        <h3>Business A</h3>
+        <p>Placeholder text here.</p>
+      </article>
+      <article class="card reveal">
+        <img src="assets/placeholder.jpg" alt="Client project 2">
+        <h3>Business B</h3>
+        <p>Placeholder text here.</p>
+      </article>
+      <article class="card reveal">
+        <img src="assets/placeholder.jpg" alt="Client project 3">
+        <h3>Business C</h3>
+        <p>Placeholder text here.</p>
+      </article>
+    </div>
+    <a href="peluangPortfolio.html" class="link-more-block">Read more →</a>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt-bg reveal">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@peluang.com">info@peluang.com</a></p>
+        <p>Phone: +60 17-871 5825</p>
+        <p>Address: no 7, Jalan Datuk Sulaiman 1</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-row"><span class="brand-mark">●</span><span class="brand-text">Peluang</span></div>
+      <p class="small muted">© <span id="y"></span> Peluang Social Network Sdn Bhd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="./js/peluang.js"></script>
+</body>
+</html>

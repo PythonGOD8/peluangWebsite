@@ -1,0 +1,73 @@
+/* Loads AFTER peluangHome.css — keep page-specific and minimal */
+
+/* Center page content */
+body { text-align: center; }
+
+/* Work grid (responsive) */
+.work-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+@media (min-width: 800px) {
+  .work-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.work-card {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(0,0,0,.03);
+  padding: 1rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.work-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+.work-card h3 { margin: .75rem 0 .25rem; }
+
+/* Thumbnail with consistent aspect ratio */
+.thumb {
+  border-radius: calc(var(--radius) - 2px);
+  overflow: hidden;
+}
+.thumb img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* Featured project split layout */
+.featured {
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
+  text-align: left;           /* make copy easy to read */
+}
+.featured-media img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+.featured-content h2 { margin-top: 0; }
+.featured-content p { color: var(--muted); }
+
+@media (min-width: 900px) {
+  .featured {
+    grid-template-columns: 1.1fr .9fr;
+  }
+}
+
+/* Keep footer traditional, not centered */
+.site-footer .footer-inner { text-align: left; }
+
+/* Reveal animation (reuse global behavior) */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }

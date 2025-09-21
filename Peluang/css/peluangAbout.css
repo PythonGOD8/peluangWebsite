@@ -1,0 +1,91 @@
+/* --- About Page Specific Styles (loads AFTER peluangHome.css) --- */
+
+/* 2-column grid for Mission & Vision */
+.grid--2 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid--2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* TEAM SECTION */
+.team-bg { background: #f3f4f6; }
+
+/* Photo grid look (no bulky cards) */
+.team-photo-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px) {
+  .team-photo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.person {
+  text-align: center;
+  padding: 1rem 0;
+}
+.person .photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;          /* portrait */
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-color: #e5e7eb;    /* fallback */
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.person:hover .photo {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,.10);
+}
+.person h3 { margin:.8rem 0 .25rem; }
+.person .role { color: var(--muted); margin: 0; }
+
+/* WHY CHOOSE US — feature cards (no bullet dots) */
+.why-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+@media (min-width: 800px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.03);
+  max-width: 520px;
+  width: 100%;
+  text-align: left;
+}
+.feature-card .icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--brand);
+  box-shadow: 0 4px 10px rgba(11,95,255,.25);
+}
+.feature-card h3 {
+  margin: 0 0 .25rem;
+  font-size: 1.05rem;
+}
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Reveal (reuse site animation) */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
