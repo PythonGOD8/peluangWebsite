@@ -1,9 +1,9 @@
-/* Loads AFTER peluangHome.css — keep page-specific and minimal */
 
-/* Center page content */
+
+
 body { text-align: center; }
 
-/* Work grid (responsive) */
+
 .work-grid {
   display: grid;
   gap: 1.25rem;
@@ -30,7 +30,7 @@ body { text-align: center; }
 }
 .work-card h3 { margin: .75rem 0 .25rem; }
 
-/* Thumbnail with consistent aspect ratio */
+
 .thumb {
   border-radius: calc(var(--radius) - 2px);
   overflow: hidden;
@@ -43,12 +43,12 @@ body { text-align: center; }
   display: block;
 }
 
-/* Featured project split layout */
+
 .featured {
   display: grid;
   gap: 1.25rem;
   align-items: center;
-  text-align: left;           /* make copy easy to read */
+  text-align: left;          
 }
 .featured-media img {
   width: 100%;
@@ -65,9 +65,8 @@ body { text-align: center; }
   }
 }
 
-/* Keep footer traditional, not centered */
 .site-footer .footer-inner { text-align: left; }
 
-/* Reveal animation (reuse global behavior) */
+
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }

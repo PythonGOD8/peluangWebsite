@@ -1,4 +1,4 @@
-// Header shrink on scroll
+
 (function headerShrink(){
   const header = document.querySelector('.site-header');
   function toggle() {
@@ -12,7 +12,7 @@
   window.addEventListener('scroll', toggle, { passive: true });
 })();
 
-// Reveal on scroll
+
 (function revealOnScroll(){
   const items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {
@@ -30,7 +30,7 @@
   items.forEach(el => obs.observe(el));
 })();
 
-// Mobile menu toggle with slide animation + a11y + close behaviors
+
 (function mobileMenu(){
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
@@ -44,16 +44,14 @@
     toggle.textContent = isOpen ? '✕' : '☰';
   }
 
-  // Toggle on click
+
   toggle.addEventListener('click', () => {
     const willOpen = !nav.classList.contains('open');
     setOpen(willOpen);
   });
 
-  // Close when clicking a nav link
   links.forEach(a => a.addEventListener('click', () => setOpen(false)));
 
-  // Close when clicking outside
   document.addEventListener('click', (e) => {
     if (!nav.classList.contains('open')) return;
     const withinNav = nav.contains(e.target);
@@ -61,7 +59,7 @@
     if (!withinNav && !onToggle) setOpen(false);
   });
 
-  // Close on Escape
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') setOpen(false);
   });

@@ -1,6 +1,5 @@
-/* --- About Page Specific Styles (loads AFTER peluangHome.css) --- */
 
-/* 2-column grid for Mission & Vision */
+
 .grid--2 {
   display: grid;
   gap: 1.5rem;
@@ -10,10 +9,9 @@
   .grid--2 { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* TEAM SECTION */
+
 .team-bg { background: #f3f4f6; }
 
-/* Photo grid look (no bulky cards) */
 .team-photo-grid {
   display: grid;
   gap: 1.5rem;
@@ -28,11 +26,11 @@
 }
 .person .photo {
   width: 100%;
-  aspect-ratio: 4 / 5;          /* portrait */
+  aspect-ratio: 4 / 5;        
   border-radius: 12px;
   background-size: cover;
   background-position: center;
-  background-color: #e5e7eb;    /* fallback */
+  background-color: #e5e7eb;   
   box-shadow: 0 10px 24px rgba(0,0,0,.06);
   transition: transform .25s ease, box-shadow .25s ease;
 }
@@ -43,7 +41,7 @@
 .person h3 { margin:.8rem 0 .25rem; }
 .person .role { color: var(--muted); margin: 0; }
 
-/* WHY CHOOSE US — feature cards (no bullet dots) */
+
 .why-grid {
   display: grid;
   gap: 1rem;
@@ -86,6 +84,6 @@
   color: var(--muted);
 }
 
-/* Reveal (reuse site animation) */
+
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
