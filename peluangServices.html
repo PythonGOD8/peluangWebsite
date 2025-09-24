@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services — Peluang</title>
+  <meta name="description" content="Discover Peluang services" />
+
+  <!-- 1) Global site styles (header/nav/layout/buttons/etc.) -->
+  <link rel="stylesheet" href="css/peluangHome.css" />
+  <!-- 2) Page-specific styles (small overrides for this page) -->
+  <link rel="stylesheet" href="css/peluangServices.css" />
+
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="peluangHome.html">
+        <span class="brand-mark">●</span><span class="brand-text">Peluang</span>
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="peluangAbout.html">About</a></li>
+          <li><a href="peluangServices.html">Services</a></li>
+          <li><a href="peluangPortfolio.html">Portfolio</a></li>
+          <li><a class="btn btn--primary" href="peluangContact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services -->
+    <section class="section reveal">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placeholder intro line.</p>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Consulting</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          </article>
+          <article class="card">
+            <h3>Strategy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          </article>
+          <article class="card">
+            <h3>Implementation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-row"><span class="brand-mark">●</span><span class="brand-text">Peluang</span></div>
+      <p class="small muted">© <span id="y"></span> Peluang Sdn Bhd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <!-- Include the same JS as other pages (menu, reveal animations, header shrink) -->
+  <script src="js/peluang.js"></script>
+</body>
+</html>
